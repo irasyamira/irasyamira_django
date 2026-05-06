@@ -79,10 +79,22 @@ WSGI_APPLICATION = 'irasyamira.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'arimaysari$irasyamira_django',
+        'USER': 'arimaysari',
+        'PASSWORD': 'djapango',
+        'HOST': 'arimaysari.mysql.pythonanywhere-services.com',
+    }
+}
+
+'''
+DATABASES = {
+    'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+'''
 
 
 # Password validation
