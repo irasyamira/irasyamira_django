@@ -35,12 +35,14 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     "polls.apps.PollsConfig",
+    "posts.apps.PostsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "ckeditor",
 ]
 
 MIDDLEWARE = [
@@ -84,6 +86,9 @@ DATABASES = {
         'USER': 'arimaysari',
         'PASSWORD': 'djapango',
         'HOST': 'arimaysari.mysql.pythonanywhere-services.com',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 
