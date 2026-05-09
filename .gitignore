@@ -4,3 +4,11 @@
 *.db
 *.db-shm
 *.db-wal
+
+*.log
+*.pot
+*.pyc
+__pycache__/
+
+*settings.py
+
